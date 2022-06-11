@@ -2,7 +2,8 @@ import Vue from 'vue'
 import { createInertiaApp, Head, Link } from '@inertiajs/inertia-vue'
 import { InertiaProgress } from '@inertiajs/progress'
 import vuetify from '@/plugins/vuetify'
-import store from './store'
+import store from '@/store'
+import i18n from '@/i18n'
 import AdminLayout from '@/layouts/AdminLayout'
 
 require('./bootstrap')
@@ -29,6 +30,7 @@ createInertiaApp({
       render: h => h(App, props),
       vuetify,
       store,
+      i18n,
     }).$mount(el)
   },
 })
