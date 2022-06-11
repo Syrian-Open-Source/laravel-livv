@@ -1,6 +1,6 @@
 export default {
   delete: {
-    question: 'هل أنت متأكد من رغبتك في حذف هذا العنصر'
+    question: 'هل أنت متأكد من رغبتك في حذف هذا العنصر',
   },
   buttons: {
     cancel: 'الغاء',
@@ -9,12 +9,12 @@ export default {
     add: 'إضافة',
     update: 'تحديث',
     close: 'إغلاق',
-    select: 'اختيار'
+    select: 'اختيار',
   },
   titles: {
     new: 'جديد{0}',
     edit: 'تعديل {0}',
-    options: 'خيارات {0}'
+    options: 'خيارات {0}',
   },
   columns: {
     name: 'الاسم',
@@ -24,7 +24,7 @@ export default {
     count: 'عدد {0}',
     actions: 'خيارات',
     type: 'نوع',
-    logo: 'لوغو'
+    logo: 'لوغو',
   },
-  option: 'خيار'
+  option: 'خيار',
 }

@@ -9,12 +9,12 @@ export default {
     add: 'Add',
     update: 'Update',
     close: 'Close',
-    select: 'Select'
+    select: 'Select',
   },
   titles: {
     new: 'New {0}',
     edit: 'Edit {0}',
-    options: '{0} Options'
+    options: '{0} Options',
   },
   columns: {
     name: 'Name',
@@ -24,7 +24,7 @@ export default {
     count: 'Number Of {0}',
     actions: 'Actions',
     type: 'Type',
-    logo: 'Logo'
+    logo: 'Logo',
   },
-  option: 'Option'
+  option: 'Option',
 }

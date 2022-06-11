@@ -7,5 +7,5 @@ export default {
   auth,
   nav,
   comps,
-  forms
+  forms,
 }

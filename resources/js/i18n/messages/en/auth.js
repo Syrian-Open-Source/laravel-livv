@@ -5,5 +5,5 @@ export default {
   remember: 'Remember Me',
   email: 'Email',
   password: 'Password',
-  logout: 'Logout'
+  logout: 'Logout',
 }

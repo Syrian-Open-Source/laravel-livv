@@ -3,5 +3,5 @@ import ar from './ar'
 
 export default {
   en,
-  ar
+  ar,
 }

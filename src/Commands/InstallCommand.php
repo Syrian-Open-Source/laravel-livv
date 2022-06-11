@@ -48,6 +48,7 @@ class InstallCommand extends Command
                 'sass' => '~1.32.8',
                 'sass-loader' => '^13.0.0',
                 'vue' => '^2.6.14',
+                'vue-i18n' => '^8.27.0',
                 'vue-loader' => '^15.9.8',
                 'vue-template-compiler' => '^2.6.14',
                 'vuetify' => '^2.6.6',

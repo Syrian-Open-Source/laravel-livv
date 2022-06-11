@@ -5,5 +5,5 @@ export default {
   remember: 'تذكر معلوماتي',
   email: 'البريد الإلكتروني',
   password: 'كلمة السر',
-  logout: 'تسجيل الخروج'
+  logout: 'تسجيل الخروج',
 }

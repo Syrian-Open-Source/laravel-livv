@@ -4,9 +4,9 @@ const ESLintPlugin = require('eslint-webpack-plugin')
 module.exports = {
   plugins: [
     new VuetifyLoaderPlugin({
-      progressiveImages: true
+      progressiveImages: true,
     }),
-    new ESLintPlugin()
+    new ESLintPlugin(),
   ],
   // module: {
   //   rules: [

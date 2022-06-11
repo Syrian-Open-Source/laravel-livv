@@ -6,5 +6,5 @@ export default {
   },
   list: 'اللائحة {0}',
   inbox: 'البريد الوارد',
-  settings: 'الإعدادات'
+  settings: 'الإعدادات',
 }

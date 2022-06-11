@@ -6,5 +6,5 @@ export default {
   },
   list: '{0} List',
   inbox: 'Inbox',
-  settings: 'Settings'
+  settings: 'Settings',
 }
