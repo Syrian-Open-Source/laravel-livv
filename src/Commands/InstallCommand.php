@@ -32,6 +32,7 @@ class InstallCommand extends Command
             unset($packages['@vue/compiler-sfc']);
             unset($packages['tailwindcss']);
             unset($packages['vue']);
+            unset($packages['vue-loader']);
 
             return [
                 '@inertiajs/inertia-vue' => '^0.8.0',
@@ -47,6 +48,7 @@ class InstallCommand extends Command
                 'sass' => '^1.32.8',
                 'sass-loader' => '^12.0.0',
                 'vue' => '^2.6.14',
+                'vue-loader' => '^15.9.8',
                 'vue-template-compiler' => '^2.6.14',
                 'vuetify' => '^2.6.6',
                 'vuetify-loader' => '^1.7.3',
