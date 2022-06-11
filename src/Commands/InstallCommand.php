@@ -36,7 +36,7 @@ class InstallCommand extends Command
 
             return [
                 '@inertiajs/inertia-vue' => '^0.8.0',
-                '@vue/eslint-config-standard' => '^7.0.0',
+                '@vue/eslint-config-standard' => '^6.1.0',
                 'deepmerge' => '^4.2.2',
                 'eslint' => '^8.17.0',
                 'eslint-plugin-import' => '^2.26.0',
@@ -45,18 +45,20 @@ class InstallCommand extends Command
                 'eslint-plugin-vue' => '^9.1.1',
                 'eslint-webpack-plugin' => '^3.1.1',
                 'postcss-import' => '^14.1.0',
-                'sass' => '^1.32.8',
+                'sass' => '~1.32.8',
                 'sass-loader' => '^12.0.0',
                 'vue' => '^2.6.14',
                 'vue-loader' => '^15.9.8',
                 'vue-template-compiler' => '^2.6.14',
                 'vuetify' => '^2.6.6',
                 'vuetify-loader' => '^1.7.3',
+                'vuex' => '^3.6.2',
             ] + $packages;
         }, true);
 
         (new FileSystem())->deleteDirectory(resource_path('/js/'));
         (new Filesystem())->copyDirectory(__DIR__ . '/../../resources/js/', resource_path('/js/'));
+        (new Filesystem())->copyDirectory(__DIR__ . '/../../resources/scss/', resource_path('/scss/'));
         (new FileSystem())->delete(base_path('tailwind.config.js'));
         copy(__DIR__ . '/../../resources/js/app.js', resource_path('/js/app.js'));
         copy(__DIR__ . '/../../resources/webpack.config.js', base_path('/webpack.config.js'));

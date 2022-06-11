@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,14 +11,25 @@ const mix = require('laravel-mix');
  |
  */
 
+// eslint-disable-next-line no-undef
+Mix.listen('configReady', config => {
+  const scssRule = config.module.rules.find(r => r.test.toString() === /\.scss$/.toString())
+  const scssOptions = scssRule.oneOf[0].use.find(l => l.loader.search('sass-loader') !== -1).options
+  scssOptions.additionalData = '@import "./resources/scss/variables.scss";'
+
+  const sassRule = config.module.rules.find(r => r.test.toString() === /\.sass$/.toString())
+  const sassOptions = sassRule.oneOf[0].use.find(l => l.loader.search('sass-loader') !== -1).options
+  sassOptions.additionalData = '@import "./resources/scss/variables.scss"'
+})
+
 mix.js('resources/js/app.js', 'public/js')
-    .vue()
-    .postCss('resources/css/app.css', 'public/css', [require('postcss-import'), require('autoprefixer')])
-    .alias({
-        '@': 'resources/js',
-    })
-    .webpackConfig(require('./webpack.config'))
+  .vue()
+  .postCss('resources/css/app.css', 'public/css', [require('postcss-import'), require('autoprefixer')])
+  .alias({
+    '@': 'resources/js',
+  })
+  .webpackConfig(require('./webpack.config'))
 
 if (mix.inProduction()) {
-    mix.version()
+  mix.version()
 }
