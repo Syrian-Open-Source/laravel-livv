@@ -54,10 +54,10 @@ class InstallCommand extends Command
         (new FileSystem())->deleteDirectory(resource_path('/js/'));
         (new Filesystem())->copyDirectory(__DIR__ . '/../../resources/js/', resource_path('/js/'));
         (new FileSystem())->delete(base_path('tailwind.config.js'));
-        copy(__DIR__ . '../../resources/js/app.js', resource_path('/js/app.js'));
-        copy(__DIR__ . '../../resources/webpack.config.js', base_path('/webpack.config.js'));
-        copy(__DIR__ . '../../resources/webpack.mix.js', base_path('/webpack.mix.js'));
-        copy(__DIR__ . '../../resources/.eslintrc.js', base_path('/.eslintrc.js'));
+        copy(__DIR__ . '/../../resources/js/app.js', resource_path('/js/app.js'));
+        copy(__DIR__ . '/../../resources/webpack.config.js', base_path('/webpack.config.js'));
+        copy(__DIR__ . '/../../resources/webpack.mix.js', base_path('/webpack.mix.js'));
+        copy(__DIR__ . '/../../resources/.eslintrc.js', base_path('/.eslintrc.js'));
 
         return self::SUCCESS;
     }
