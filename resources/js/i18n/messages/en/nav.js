@@ -2,7 +2,7 @@ export default {
   general: {
     title: 'General',
     dashboard: 'Dashboard',
-    management: 'Management'
+    management: 'Management',
   },
   list: '{0} List',
   inbox: 'Inbox',

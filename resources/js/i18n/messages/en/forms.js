@@ -1,6 +1,6 @@
 export default {
   delete: {
-    question: 'Are you sure you want to delete this item?'
+    question: 'Are you sure you want to delete this item?',
   },
   buttons: {
     cancel: 'Cancel',
