@@ -38,7 +38,7 @@ class InstallCommand extends Command
                 '@vue/eslint-config-standard' => '^7.0.0',
                 'deepmerge' => '^4.2.2',
                 'eslint' => '^8.17.0',
-                'eslint-plugin-import' => '^2.26.1',
+                'eslint-plugin-import' => '^2.26.0',
                 'eslint-plugin-node' => '^11.1.0',
                 'eslint-plugin-promise' => '^6.0.0',
                 'eslint-plugin-vue' => '^9.1.1',
