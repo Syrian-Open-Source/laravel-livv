@@ -12,7 +12,8 @@ class InstallCommand extends Command
     use InteractsWithComposerPackages;
     use InteractsWithNodePackages;
 
-    public $signature = 'livv:install';
+    public $signature = 'livv:install
+                            {--composer=global : Absolute path to the Composer binary which should be used to install packages}';
 
     public $description = 'Install Inertia, Vue 2 and Vuetify.';
 
