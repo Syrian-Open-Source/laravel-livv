@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "syrian-open-source/laravel-livv",
+    "description": "This is my package laravel-livv",
     "keywords": [
-        ":vendor_name",
+        "syrian-open-source",
         "laravel",
-        ":package_slug"
+        "laravel-livv"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/syrian-open-source/laravel-livv",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Roduan Kareem Aldeen",
+            "email": "roduan98@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "SyrianOpenSource\\LaravelLivv\\": "src",
+            "SyrianOpenSource\\LaravelLivv\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "SyrianOpenSource\\LaravelLivv\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -56,10 +56,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "SyrianOpenSource\\LaravelLivv\\LaravelLivvServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelLivv": "SyrianOpenSource\\LaravelLivv\\Facades\\LaravelLivv"
             }
         }
     },
