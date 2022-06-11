@@ -4,7 +4,7 @@ import { InertiaProgress } from '@inertiajs/progress'
 import { Head, Link } from '@inertiajs/inertia-vue'
 import vuetify from '@/plugins/vuetify'
 import store from './store'
-import AdminLayout from '@/Layouts/AdminLayout'
+import AdminLayout from '@/layouts/AdminLayout'
 
 require('./bootstrap')
 
