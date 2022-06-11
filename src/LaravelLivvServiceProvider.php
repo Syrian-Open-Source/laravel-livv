@@ -2,9 +2,9 @@
 
 namespace SOS\LaravelLivv;
 
+use SOS\LaravelLivv\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use SOS\LaravelLivv\Commands\InstallCommand;
 
 class LaravelLivvServiceProvider extends PackageServiceProvider
 {
