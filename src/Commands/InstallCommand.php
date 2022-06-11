@@ -4,8 +4,8 @@ namespace SOS\LaravelLivv\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
-use SOS\Traits\InteractsWithComposerPackages;
-use SOS\Traits\InteractsWithNodePackages;
+use SOS\LaravelLivv\Traits\InteractsWithComposerPackages;
+use SOS\LaravelLivv\Traits\InteractsWithNodePackages;
 
 class InstallCommand extends Command
 {

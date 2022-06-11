@@ -1,6 +1,6 @@
 <?php
 
-namespace SOS\Traits;
+namespace SOS\LaravelLivv\Traits;
 
 trait InteractsWithNodePackages
 {
