@@ -4,7 +4,7 @@ namespace SyrianOpenSource\LaravelLivv;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use SyrianOpenSource\LaravelLivv\Commands\LaravelLivvCommand;
+use SyrianOpenSource\LaravelLivv\Commands\InstallCommand;
 
 class LaravelLivvServiceProvider extends PackageServiceProvider
 {
@@ -17,9 +17,6 @@ class LaravelLivvServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-livv')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-livv_table')
-            ->hasCommand(LaravelLivvCommand::class);
+            ->hasCommand(InstallCommand::class);
     }
 }
