@@ -1,7 +1,6 @@
 import Vue from 'vue'
-import { createInertiaApp } from '@inertiajs/inertia-vue'
+import { createInertiaApp, Head, Link } from '@inertiajs/inertia-vue'
 import { InertiaProgress } from '@inertiajs/progress'
-import { Head, Link } from '@inertiajs/inertia-vue'
 import vuetify from '@/plugins/vuetify'
 import store from './store'
 import AdminLayout from '@/layouts/AdminLayout'
@@ -15,7 +14,7 @@ createInertiaApp({
   title: (title) => `${title} - ${appName}`,
   resolve: (name) => {
     const page = require(`./pages/${name}.vue`)
-    page.layout = page.layout ||AdminLayout
+    page.layout = page.layout || AdminLayout
     return page
   },
   setup ({ el, App, props, plugin }) {
@@ -33,4 +32,3 @@ createInertiaApp({
     }).$mount(el)
   },
 })
-
