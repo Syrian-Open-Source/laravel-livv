@@ -1,11 +1,11 @@
 <?php
 
-namespace SyrianOpenSource\LaravelLivv\Facades;
+namespace SOS\LaravelLivv\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \SyrianOpenSource\LaravelLivv\LaravelLivv
+ * @see \SOS\LaravelLivv\LaravelLivv
  */
 class LaravelLivv extends Facade
 {

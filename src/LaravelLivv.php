@@ -1,6 +1,6 @@
 <?php
 
-namespace SyrianOpenSource\LaravelLivv;
+namespace SOS\LaravelLivv;
 
 class LaravelLivv
 {

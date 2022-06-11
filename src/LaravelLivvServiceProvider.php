@@ -1,10 +1,10 @@
 <?php
 
-namespace SyrianOpenSource\LaravelLivv;
+namespace SOS\LaravelLivv;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use SyrianOpenSource\LaravelLivv\Commands\InstallCommand;
+use SOS\LaravelLivv\Commands\InstallCommand;
 
 class LaravelLivvServiceProvider extends PackageServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace SyrianOpenSource\Traits;
+namespace SOS\Traits;
 
 trait InteractsWithNodePackages
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace SyrianOpenSource\LaravelLivv\Database\Factories;
+namespace SOS\LaravelLivv\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

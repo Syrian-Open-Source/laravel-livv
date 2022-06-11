@@ -1,11 +1,11 @@
 <?php
 
-namespace SyrianOpenSource\LaravelLivv\Commands;
+namespace SOS\LaravelLivv\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
-use SyrianOpenSource\Traits\InteractsWithComposerPackages;
-use SyrianOpenSource\Traits\InteractsWithNodePackages;
+use SOS\Traits\InteractsWithComposerPackages;
+use SOS\Traits\InteractsWithNodePackages;
 
 class InstallCommand extends Command
 {

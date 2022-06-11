@@ -52,8 +52,8 @@ php artisan vendor:publish --tag="laravel-livv-views"
 ## Usage
 
 ```php
-$laravelLivv = new SyrianOpenSource\LaravelLivv();
-echo $laravelLivv->echoPhrase('Hello, SyrianOpenSource!');
+$laravelLivv = new SOS\LaravelLivv();
+echo $laravelLivv->echoPhrase('Hello, SOS!');
 ```
 
 ## Testing

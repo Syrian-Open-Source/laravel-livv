@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "SyrianOpenSource\\LaravelLivv\\": "src",
-            "SyrianOpenSource\\LaravelLivv\\Database\\Factories\\": "database/factories"
+            "SOS\\LaravelLivv\\": "src",
+            "SOS\\LaravelLivv\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SyrianOpenSource\\LaravelLivv\\Tests\\": "tests"
+            "SOS\\LaravelLivv\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -60,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SyrianOpenSource\\LaravelLivv\\LaravelLivvServiceProvider"
+                "SOS\\LaravelLivv\\LaravelLivvServiceProvider"
             ],
             "aliases": {
-                "LaravelLivv": "SyrianOpenSource\\LaravelLivv\\Facades\\LaravelLivv"
+                "LaravelLivv": "SOS\\LaravelLivv\\Facades\\LaravelLivv"
             }
         }
     },

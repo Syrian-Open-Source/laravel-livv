@@ -1,6 +1,6 @@
 <?php
 
-namespace SyrianOpenSource\Traits;
+namespace SOS\Traits;
 
 use Symfony\Component\Process\Process;
 

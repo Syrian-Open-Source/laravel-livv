@@ -1,10 +1,10 @@
 <?php
 
-namespace SyrianOpenSource\LaravelLivv\Tests;
+namespace SOS\LaravelLivv\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use SyrianOpenSource\LaravelLivv\LaravelLivvServiceProvider;
+use SOS\LaravelLivv\LaravelLivvServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'SyrianOpenSource\\LaravelLivv\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'SOS\\LaravelLivv\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

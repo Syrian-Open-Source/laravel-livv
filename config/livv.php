@@ -1,5 +1,5 @@
 <?php
-// config for SyrianOpenSource/LaravelLivv
+// config for SOS/LaravelLivv
 return [
 
 ];
