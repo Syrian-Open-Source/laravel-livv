@@ -61,10 +61,7 @@
         "laravel": {
             "providers": [
                 "SOS\\LaravelLivv\\LaravelLivvServiceProvider"
-            ],
-            "aliases": {
-                "LaravelLivv": "SOS\\LaravelLivv\\Facades\\LaravelLivv"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
