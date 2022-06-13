@@ -28,9 +28,9 @@
       </div>
 
       <div class="flex items-center justify-end mt-4">
-        <v-button :loading="form.processing">
+        <v-btn :loading="form.processing">
           Email Password Reset Link
-        </v-button>
+        </v-btn>
       </div>
     </form>
   </authentication-card>
