@@ -44,31 +44,30 @@ import AppLayout from '@/layouts/AppLayout'
 export default {
   components: {
     AuthenticationCard,
-    AuthenticationCardLogo
+    AuthenticationCardLogo,
   },
 
   layout: AppLayout,
 
-
   props: {
     status: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
 
   data () {
     return {
       form: this.$inertia.form({
-        email: ''
-      })
+        email: '',
+      }),
     }
   },
 
   methods: {
     submit () {
       this.form.post(this.route('password.email'))
-    }
-  }
+    },
+  },
 }
 </script>

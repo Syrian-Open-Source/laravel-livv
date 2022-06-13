@@ -83,15 +83,15 @@ import AppLayout from '@/layouts/AppLayout'
 export default {
   components: {
     AuthenticationCard,
-    AuthenticationCardLogo
+    AuthenticationCardLogo,
   },
   layout: AppLayout,
   props: {
     canResetPassword: Boolean,
     status: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
 
   data () {
@@ -99,8 +99,8 @@ export default {
       form: this.$inertia.form({
         email: '',
         password: '',
-        remember: false
-      })
+        remember: false,
+      }),
     }
   },
 
@@ -111,7 +111,7 @@ export default {
 
     hasErrors () {
       return Object.keys(this.errors).length > 0
-    }
+    },
   },
 
   methods: {
@@ -119,12 +119,12 @@ export default {
       this.form
         .transform(data => ({
           ...data,
-          remember: this.form.remember ? 'on' : ''
+          remember: this.form.remember ? 'on' : '',
         }))
         .post(this.route('login'), {
-          onFinish: () => this.form.reset('password')
+          onFinish: () => this.form.reset('password'),
         })
-    }
-  }
+    },
+  },
 }
 </script>

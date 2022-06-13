@@ -53,7 +53,7 @@ export default {
   components: {
     FlashMessages,
     BrandLogo,
-    SideBar
+    SideBar,
   },
   computed: {
     selectableLocale () {
@@ -61,7 +61,7 @@ export default {
     },
     selectableLang () {
       return this.$page.props.locale === 'en' ? 'ar' : 'en'
-    }
+    },
   },
 
   created () {
@@ -73,7 +73,7 @@ export default {
       this.$inertia.visit(route('lang.switch', { lang: this.selectableLang }), { preserveScroll: true })
       this.$i18n.locale = this.selectableLang
       if (this.$i18n.locale === 'ar') { this.$vuetify.rtl = true } else { this.$vuetify.rtl = false }
-    }
-  }
+    },
+  },
 }
 </script>

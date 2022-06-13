@@ -114,7 +114,7 @@ import AppLayout from '../../layouts/AppLayout'
 export default {
   components: {
     AuthenticationCard,
-    AuthenticationCardLogo
+    AuthenticationCardLogo,
   },
 
   layout: AppLayout,
@@ -126,8 +126,8 @@ export default {
         email: '',
         password: '',
         password_confirmation: '',
-        terms: false
-      })
+        terms: false,
+      }),
     }
   },
 
@@ -138,15 +138,15 @@ export default {
 
     hasErrors () {
       return Object.keys(this.errors).length > 0
-    }
+    },
   },
 
   methods: {
     submit () {
       this.form.post(this.route('register'), {
-        onFinish: () => this.form.reset('password', 'password_confirmation')
+        onFinish: () => this.form.reset('password', 'password_confirmation'),
       })
-    }
-  }
+    },
+  },
 }
 </script>

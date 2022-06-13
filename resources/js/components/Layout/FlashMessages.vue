@@ -26,12 +26,12 @@
 <script>
 export default {
   data: () => ({
-    snackbar: false
+    snackbar: false,
   }),
   computed: {
     text () {
       return this.$page.props.flash.success || this.$page.props.flash.error
-    }
+    },
   },
   watch: {
     '$page.props.flash': {
@@ -40,8 +40,8 @@ export default {
         if (this.$page.props.flash.success || this.$page.props.flash.error) {
           this.snackbar = true
         }
-      }
-    }
-  }
+      },
+    },
+  },
 }
 </script>

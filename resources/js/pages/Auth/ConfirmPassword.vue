@@ -50,7 +50,7 @@ import AppLayout from '@/layouts/AppLayout'
 export default {
   components: {
     AuthenticationCard,
-    AuthenticationCardLogo
+    AuthenticationCardLogo,
   },
 
   layout: AppLayout,
@@ -58,8 +58,8 @@ export default {
   data () {
     return {
       form: this.$inertia.form({
-        password: ''
-      })
+        password: '',
+      }),
     }
   },
 
@@ -70,15 +70,15 @@ export default {
 
     hasErrors () {
       return Object.keys(this.errors).length > 0
-    }
+    },
   },
 
   methods: {
     submit () {
       this.form.post(this.route('password.confirm'), {
-        onFinish: () => this.form.reset()
+        onFinish: () => this.form.reset(),
       })
-    }
-  }
+    },
+  },
 }
 </script>

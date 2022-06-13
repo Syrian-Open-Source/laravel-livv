@@ -6,7 +6,7 @@ $finder = Symfony\Component\Finder\Finder::create()
         __DIR__ . '/tests',
     ])
     ->name('*.php')
-    ->notName('*.blade.php')
+    ->notName(['*.blade.php', '*.js', '*.vue'])
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 

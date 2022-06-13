@@ -31,14 +31,14 @@ export default {
 
   data () {
     return {
-      showingNavigationDropdown: false
+      showingNavigationDropdown: false,
     }
   },
 
   methods: {
     logout () {
       this.$inertia.post(route('logout'))
-    }
-  }
+    },
+  },
 }
 </script>

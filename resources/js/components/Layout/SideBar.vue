@@ -92,11 +92,11 @@ export default {
             {
               text: this.$t('nav.general.dashboard'),
               link: 'dashboard',
-              icon: 'mdi-view-dashboard'
-            }
-          ]
-        }
-      ]
+              icon: 'mdi-view-dashboard',
+            },
+          ],
+        },
+      ],
     }
   },
   methods: {
@@ -127,7 +127,7 @@ export default {
     },
     getRouteName (name) {
       return `${route().current().split('.')[0]}.${name}`
-    }
-  }
+    },
+  },
 }
 </script>

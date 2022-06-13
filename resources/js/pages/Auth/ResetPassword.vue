@@ -69,7 +69,7 @@ import AppLayout from '../../layouts/AppLayout'
 export default {
   components: {
     AuthenticationCard,
-    AuthenticationCardLogo
+    AuthenticationCardLogo,
   },
 
   layout: AppLayout,
@@ -77,12 +77,12 @@ export default {
   props: {
     email: {
       type: String,
-      default: ''
+      default: '',
     },
     token: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
 
   data () {
@@ -91,17 +91,17 @@ export default {
         token: this.token,
         email: this.email,
         password: '',
-        password_confirmation: ''
-      })
+        password_confirmation: '',
+      }),
     }
   },
 
   methods: {
     submit () {
       this.form.post(this.route('password.update'), {
-        onFinish: () => this.form.reset('password', 'password_confirmation')
+        onFinish: () => this.form.reset('password', 'password_confirmation'),
       })
-    }
-  }
+    },
+  },
 }
 </script>

@@ -42,7 +42,7 @@ import AppLayout from '../../layouts/AppLayout'
 export default {
   components: {
     AuthenticationCard,
-    AuthenticationCardLogo
+    AuthenticationCardLogo,
   },
 
   layout: AppLayout,
@@ -50,26 +50,26 @@ export default {
   props: {
     status: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
 
   data () {
     return {
-      form: this.$inertia.form()
+      form: this.$inertia.form(),
     }
   },
 
   computed: {
     verificationLinkSent () {
       return this.status === 'verification-link-sent'
-    }
+    },
   },
 
   methods: {
     submit () {
       this.form.post(this.route('verification.send'))
-    }
-  }
+    },
+  },
 }
 </script>

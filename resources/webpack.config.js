@@ -6,7 +6,10 @@ module.exports = {
     new VuetifyLoaderPlugin({
       progressiveImages: true,
     }),
-    new ESLintPlugin(),
+    new ESLintPlugin({
+      fix: true,
+      extensions: ['js', 'vue'],
+    }),
   ],
   // module: {
   //   rules: [
