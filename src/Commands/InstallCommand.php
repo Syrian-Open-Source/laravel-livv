@@ -19,7 +19,7 @@ class InstallCommand extends Command
 
     public function handle(): int
     {
-        if (! $this->confirm('Resources folder will be changed, please make sure to commit you file changes. Are you ready?')) {
+        if (! $this->confirm('Resources folder will be changed, please make sure to commit your file changes. Are you ready?')) {
             return self::FAILURE;
         }
 
