@@ -31,6 +31,8 @@
 
 <script>
 export default {
+  name: 'DeleteButton',
+
   props: {
     isOpen: {
       type: Boolean,
