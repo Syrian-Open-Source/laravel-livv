@@ -7,7 +7,7 @@
       Register
     </template>
 
-    <form @submit.prevent="submit">
+    <v-form @submit.prevent="submit">
       <v-row>
         <v-col cols="12">
           <v-text-field
@@ -102,7 +102,7 @@
           </inertia-link>
         </v-col>
       </v-row>
-    </form>
+    </v-form>
   </authentication-card>
 </template>
 

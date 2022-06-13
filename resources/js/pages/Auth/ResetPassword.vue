@@ -4,60 +4,64 @@
       <authentication-card-logo />
     </template>
 
-    <form @submit.prevent="submit">
-      <div>
-        <jet-label
-          for="email"
-          value="Email"
-        />
-        <jet-input
-          id="email"
-          v-model="form.email"
-          type="email"
-          class="mt-1 block w-full"
-          required
-          autofocus
-          :error-messages="errors['email']"
-        />
-      </div>
-
-      <div class="mt-4">
-        <jet-label
-          for="password"
-          value="Password"
-        />
-        <jet-input
-          id="password"
-          v-model="form.password"
-          type="password"
-          class="mt-1 block w-full"
-          required
-          autocomplete="new-password"
-          :error-messages="errors['password']"
-        />
-      </div>
-
-      <div class="mt-4">
-        <jet-label
-          for="password_confirmation"
-          value="Confirm Password"
-        />
-        <jet-input
-          id="password_confirmation"
-          v-model="form.password_confirmation"
-          type="password"
-          class="mt-1 block w-full"
-          required
-          autocomplete="new-password"
-        />
-      </div>
-
-      <div class="flex items-center justify-end mt-4">
-        <v-button :loading="form.processing">
-          Reset Password
-        </v-button>
-      </div>
-    </form>
+    <v-form @submit.prevent="submit">
+      <v-row>
+        <v-col cols="12">
+          <v-text-field
+            v-model="form.email"
+            name="email"
+            label="Email"
+            type="email"
+            hide-details="auto"
+            autocomplete="email"
+            :error-messages="errors['email']"
+            outlined
+            required
+            autofocus
+          />
+        </v-col>
+        <v-col cols="12">
+          <v-text-field
+            v-model="form.password"
+            name="password"
+            type="password"
+            label="Password"
+            hide-details="auto"
+            autocomplete="new-password"
+            :error-messages="errors['password']"
+            outlined
+            required
+            autofocus
+          />
+        </v-col>
+        <v-col cols="12">
+          <v-text-field
+            v-model="form.password_confirmation"
+            name="password"
+            type="password"
+            label="Confirm Password"
+            hide-details="auto"
+            autocomplete="new-password"
+            outlined
+            required
+            autofocus
+          />
+        </v-col>
+        <v-col
+          cols="12"
+          class="d-flex align-center"
+        >
+          <v-btn
+            color="primary"
+            :disabled="form.processing"
+            :loading="form.processing"
+            @click="submit"
+          >
+            Reset Password
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-form>
   </authentication-card>
 </template>
 

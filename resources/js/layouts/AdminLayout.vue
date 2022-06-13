@@ -72,7 +72,7 @@ export default {
     switchLang () {
       this.$inertia.visit(route('lang.switch', { lang: this.selectableLang }), { preserveScroll: true })
       this.$i18n.locale = this.selectableLang
-      if (this.$i18n.locale === 'ar') { this.$vuetify.rtl = true } else { this.$vuetify.rtl = false }
+      this.$vuetify.rtl = this.$i18n.locale === 'ar'
     },
   },
 }

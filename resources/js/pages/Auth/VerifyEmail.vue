@@ -17,9 +17,9 @@
 
     <form @submit.prevent="submit">
       <div class="mt-4 flex items-center justify-between">
-        <v-button :loading="form.processing">
+        <v-btn :loading="form.processing">
           Resend Verification Email
-        </v-button>
+        </v-btn>
 
         <inertia-link
           :href="route('logout')"

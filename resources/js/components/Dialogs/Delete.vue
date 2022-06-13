@@ -34,8 +34,8 @@ export default {
   props: {
     isOpen: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   methods: {
     cancel () {
@@ -45,7 +45,7 @@ export default {
     confirm () {
       this.$emit('update:isOpen', false)
       this.$emit('confirm')
-    }
-  }
+    },
+  },
 }
 </script>
