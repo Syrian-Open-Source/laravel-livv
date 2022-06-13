@@ -81,6 +81,8 @@ import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo'
 import AppLayout from '@/layouts/AppLayout'
 
 export default {
+  name: 'LoginView',
+
   components: {
     AuthenticationCard,
     AuthenticationCardLogo,

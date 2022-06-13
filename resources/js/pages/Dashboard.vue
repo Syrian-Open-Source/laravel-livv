@@ -8,6 +8,8 @@
 import AdminLayout from '../layouts/AdminLayout'
 
 export default {
+  name: 'DashboardView',
+  
   layout: AdminLayout,
 }
 </script>
