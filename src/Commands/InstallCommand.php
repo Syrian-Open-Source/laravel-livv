@@ -65,6 +65,7 @@ class InstallCommand extends Command
         (new Filesystem())->copyDirectory(__DIR__ . '/../../resources/js/', resource_path('/js/'));
         (new Filesystem())->copyDirectory(__DIR__ . '/../../resources/styles/', resource_path('/styles/'));
         (new FileSystem())->delete(base_path('tailwind.config.js'));
+        (new FileSystem())->delete(base_path('postcss.config.js'));
         copy(__DIR__ . '/../../resources/js/app.js', resource_path('/js/app.js'));
         copy(__DIR__ . '/../../resources/views/app.blade.php', resource_path('/views/app.blade.php'));
         copy(__DIR__ . '/../../resources/vite.config.js', base_path('/vite.config.js'));
