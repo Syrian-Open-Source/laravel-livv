@@ -61,12 +61,11 @@ class InstallCommand extends Command
 
         (new FileSystem())->deleteDirectory(resource_path('/js/'));
         (new Filesystem())->copyDirectory(__DIR__ . '/../../resources/js/', resource_path('/js/'));
-        (new Filesystem())->copyDirectory(__DIR__ . '/../../resources/scss/', resource_path('/scss/'));
+        (new Filesystem())->copyDirectory(__DIR__ . '/../../resources/styles/', resource_path('/styles/'));
         (new FileSystem())->delete(base_path('tailwind.config.js'));
         copy(__DIR__ . '/../../resources/js/app.js', resource_path('/js/app.js'));
         copy(__DIR__ . '/../../resources/views/app.blade.php', resource_path('/views/app.blade.php'));
-        copy(__DIR__ . '/../../resources/webpack.config.js', base_path('/webpack.config.js'));
-        copy(__DIR__ . '/../../resources/webpack.mix.js', base_path('/webpack.mix.js'));
+        copy(__DIR__ . '/../../resources/vite.config.js', base_path('/vite.config.js'));
         copy(__DIR__ . '/../../resources/.eslintrc.js', base_path('/.eslintrc.js'));
         copy(__DIR__ . '/../../resources/.editorconfig', base_path('/.editorconfig'));
         copy(__DIR__ . '/../../resources/middleware/HandleInertiaRequests.php', base_path('app/Http/Middleware/HandleInertiaRequests.php'));
