@@ -7,7 +7,7 @@
       Register
     </template>
 
-    <v-form @submit.prevent="submit">
+    <form @submit.prevent="submit">
       <v-row>
         <v-col cols="12">
           <v-text-field
@@ -102,24 +102,19 @@
           </inertia-link>
         </v-col>
       </v-row>
-    </v-form>
+    </form>
   </authentication-card>
 </template>
 
 <script>
-import AuthenticationCard from '@/components/Auth/AuthenticationCard'
-import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo'
-import AppLayout from '../../layouts/AppLayout'
+import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
+import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
 
 export default {
-  name: 'RegisterView',
-
   components: {
     AuthenticationCard,
     AuthenticationCardLogo,
   },
-
-  layout: AppLayout,
 
   data () {
     return {

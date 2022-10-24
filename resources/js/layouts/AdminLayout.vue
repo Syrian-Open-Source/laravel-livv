@@ -9,9 +9,7 @@
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" />
       <v-app-bar-title>
-        <v-img
-          width="75"
-        >
+        <v-img width="75">
           <brand-logo background="primary" />
         </v-img>
       </v-app-bar-title>
@@ -45,9 +43,9 @@
 </template>
 
 <script>
-import BrandLogo from '@/components/Identity/Logo'
-import FlashMessages from '@/components/Layout/FlashMessages'
-import SideBar from '@/components/Layout/SideBar'
+import BrandLogo from '@/components/Identity/Logo.vue'
+import FlashMessages from '@/components/Layout/FlashMessages.vue'
+import SideBar from '@/components/Layout/SideBar.vue'
 
 export default {
   components: {

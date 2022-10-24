@@ -28,6 +28,7 @@ class InstallCommand extends Command
 
         $this->updateNodePackages(function ($packages) {
             unset($packages['@inertiajs/inertia-vue3']);
+            unset($packages['@vitejs/plugin-vue']);
             unset($packages['@tailwindcss/forms']);
             unset($packages['@vue/compiler-sfc']);
             unset($packages['tailwindcss']);
@@ -36,6 +37,7 @@ class InstallCommand extends Command
 
             return [
                 '@inertiajs/inertia-vue' => '^0.8.0',
+                '@vitejs/plugin-vue2' => '^2.0.0',
                 '@vue/eslint-config-standard' => '^6.1.0',
                 'deepmerge' => '^4.2.2',
                 'eslint' => '^8.17.0',

@@ -43,17 +43,14 @@
 </template>
 
 <script>
-import AuthenticationCard from '@/components/Auth/AuthenticationCard'
-import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo'
-import AppLayout from '@/layouts/AppLayout'
+import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
+import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
 
 export default {
   components: {
     AuthenticationCard,
     AuthenticationCardLogo,
   },
-
-  layout: AppLayout,
 
   data () {
     return {

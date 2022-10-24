@@ -49,6 +49,10 @@ Optionally, you can publish the views using
 php artisan vendor:publish --tag="laravel-livv-views"
 ```
 
+## Todo
+- [ ] Localize all files
+- [ ] Use json files instead of split translations
+
 ## Usage
 
 ```php

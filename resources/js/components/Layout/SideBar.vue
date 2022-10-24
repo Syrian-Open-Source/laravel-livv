@@ -36,7 +36,7 @@
             @click.prevent="go(getUserRoute(item.link))"
           >
             <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
+              <v-icon v-text="item.icon" />
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>
@@ -69,7 +69,7 @@
                 color="primary"
                 type="submit"
               >
-                <v-icon>mdi-logout</v-icon>
+                <v-icon v-text="'mdi-logout'" />
                 {{ $t('auth.logout') }}
               </v-btn>
             </form>
