@@ -68,13 +68,15 @@
 
 <script>
 export default {
-  name: 'BarndLogo',
+  name: 'BrandLogo',
+
   props: {
     background: {
       type: String,
       default: 'white',
     },
   },
+
   data () {
     return {
       colors: {
@@ -83,6 +85,7 @@ export default {
       },
     }
   },
+
   computed: {
     primary () {
       return this.background === 'primary' ? 'fill: #ffffff;' : `fill: ${this.colors.primary};`

@@ -111,6 +111,8 @@ import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
 import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
 
 export default {
+  name: 'RegisterView',
+
   components: {
     AuthenticationCard,
     AuthenticationCardLogo,

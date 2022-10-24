@@ -81,11 +81,15 @@ import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue
 import AppLayout from '@/layouts/AppLayout.vue'
 
 export default {
+  name: 'LoginView',
+
   components: {
     AuthenticationCard,
     AuthenticationCardLogo,
   },
+
   layout: AppLayout,
+
   props: {
     canResetPassword: Boolean,
     status: {
