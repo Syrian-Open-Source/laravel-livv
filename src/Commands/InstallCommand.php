@@ -49,6 +49,8 @@ class InstallCommand extends Command
                 'postcss-import' => '^14.1.0',
                 'sass' => '~1.32.8',
                 'sass-loader' => '^13.0.0',
+                'unplugin-vue-components' => '^0.22.7',
+                'vite-plugin-eslint' => '^1.8.1',
                 'vue' => '^2.6.14',
                 'vue-i18n' => '^8.27.0',
                 'vue-loader' => '^15.9.8',
