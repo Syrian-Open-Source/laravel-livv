@@ -17,11 +17,14 @@ composer require syrian-open-source/laravel-livv
 
 ## Usage
 
-Just run this command and you're good to go
+Just run this commands and you're good to go
 
 ```bash
 php artisan livv:install
 ```
+npm i 
+
+npm run dev 
 
 ### Disclaimer
 This package is designed to be used on a fresh Laravel project.
