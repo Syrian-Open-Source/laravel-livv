@@ -5,10 +5,11 @@ import Components from 'unplugin-vue-components/vite'
 import { VuetifyResolver } from 'unplugin-vue-components/resolvers'
 import eslint from 'vite-plugin-eslint'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   resolve: {
     alias: {
       '@': '/resources/js',
+      ...(command === 'serve' ? {} : { '@inertiajs/inertia-vue': 'node_modules/@inertiajs/inertia-vue/src/index.js' }),
     },
   },
   css: {
@@ -39,4 +40,4 @@ export default defineConfig({
     }),
     eslint({ fix: true }),
   ],
-})
+}))
