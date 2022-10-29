@@ -12,7 +12,7 @@ A package to help you get started with a new Laravel project using `Inertia`, `V
 You can install the package via composer:
 
 ```bash
-composer require syrian-open-source/laravel-livv
+composer require syrian-open-source/laravel-livv --dev
 ```
 
 ## Usage
@@ -21,6 +21,7 @@ Just run this command and you're good to go
 
 ```bash
 php artisan livv:install
+npm i && npm run dev
 ```
 
 ### Disclaimer
