@@ -45,12 +45,15 @@
 <script>
 import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
 import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
+import AppLayout from '@/layouts/AppLayout.vue'
 
 export default {
   components: {
     AuthenticationCard,
     AuthenticationCardLogo,
   },
+
+  layout: AppLayout,
 
   data () {
     return {
