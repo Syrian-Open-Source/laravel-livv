@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Inertia\Middleware;
 use Tightenco\Ziggy\Ziggy;
 
@@ -45,6 +46,7 @@ class HandleInertiaRequests extends Middleware
                     'error' => $request->session()->get('error'),
                 ];
             },
+            'locale' => App::getLocale(),
             'ziggy' => function () {
                 return (new Ziggy)->toArray();
             },
