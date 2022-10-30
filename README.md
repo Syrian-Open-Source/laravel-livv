@@ -32,6 +32,11 @@ This package is designed to be used on a fresh Laravel project.
 - [ ] Use json files instead of split translations
 - [ ] Add an example CRUD
 - [ ] Add UserSeeder with a default admin account
+- [ ] Add option to enable/disable locales
+- [ ] Update web.php with groups
+- [ ] Include laravel ide helper support
+- [ ] Refactor/Simplify SideBar component 
+- [ ] Add Roles/Permissions support
 
 ## Changelog
 
