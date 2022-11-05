@@ -60,6 +60,14 @@ export default {
     selectableLang () {
       return this.$page.props.locale === 'en' ? 'ar' : 'en'
     },
+    drawer: {
+      get () {
+        return this.$store.state.drawer
+      },
+      set (v) {
+        this.$store.commit('SET_DRAWER', v)
+      },
+    },
   },
 
   created () {
