@@ -37,6 +37,7 @@ This package is designed to be used on a fresh Laravel project.
 - [ ] Include laravel ide helper support
 - [ ] Refactor/Simplify SideBar component 
 - [ ] Add Roles/Permissions support
+- [ ] Update Welcome page content
 
 ## Changelog
 
