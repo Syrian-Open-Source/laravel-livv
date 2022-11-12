@@ -5,7 +5,7 @@
     </template>
 
     <div class="mb-4 text-sm text-gray-600">
-      Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.
+      {{ $t('comps.msg4') }}
     </div>
 
     <div
@@ -19,7 +19,7 @@
       <div>
         <v-text-field
           v-model="form.email"
-          label="Email"
+          :label="$t('auth.email')"
           type="email"
           required
           autofocus
@@ -33,7 +33,7 @@
           dark
           color="primary"
         >
-          Email Password Reset Link
+          {{ $t('forms.buttons.reset') }}
         </v-btn>
       </div>
     </form>

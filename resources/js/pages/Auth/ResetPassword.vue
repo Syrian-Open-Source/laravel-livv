@@ -54,7 +54,7 @@
 
       <div class="flex items-center justify-end mt-4">
         <v-btn :loading="form.processing">
-          Reset Password
+          {{ $t('forms.buttons.reset') }}
         </v-btn>
       </div>
     </form>
@@ -64,6 +64,7 @@
 <script>
 import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
 import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
+import AppLayout from '@/layouts/AppLayout.vue'
 
 export default {
   name: 'ResetPasswordView',
@@ -72,6 +73,8 @@ export default {
     AuthenticationCard,
     AuthenticationCardLogo,
   },
+
+  layout: AppLayout,
 
   props: {
     email: {

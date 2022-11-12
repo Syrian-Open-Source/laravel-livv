@@ -1,6 +1,8 @@
 <template>
   <v-container>
-    Hello this is where you'll see statistics about your project.
+    <v-card evaluation="5">
+      <v-card-text> {{ $t('comps.msg2') }}</v-card-text>
+    </v-card>
   </v-container>
 </template>
 

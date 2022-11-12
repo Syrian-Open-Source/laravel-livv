@@ -16,7 +16,7 @@
         height="35"
         :href="route('login')"
       >
-        Login
+        {{ $t('auth.login') }}
       </v-btn>
       <v-btn
         class="d-flex justify-center justify-space-around mr-3 "
@@ -25,7 +25,7 @@
         height="35"
         :href="route('register')"
       >
-        Register
+        {{ $t('auth.register') }}
       </v-btn>
       <v-btn
         icon

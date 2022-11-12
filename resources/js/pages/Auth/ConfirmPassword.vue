@@ -5,7 +5,7 @@
     </template>
 
     <div class="mb-4 text-subtitle-2">
-      This is a secure area of the application. Please confirm your password before continuing.
+      {{ $t('comps.msg3') }}
     </div>
 
     <form @submit.prevent="submit">
@@ -15,7 +15,7 @@
             v-model="form.password"
             name="password"
             type="password"
-            label="Password"
+            :label="$t('auth.password')"
             hide-details="auto"
             autocomplete="current-password"
             :error-messages="errors['password']"
@@ -35,7 +35,7 @@
           :loading="form.processing"
           @click="submit"
         >
-          Confirm
+          {{ $t('forms.buttoms.confirm') }}
         </v-btn>
       </v-col>
     </form>
@@ -45,12 +45,15 @@
 <script>
 import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
 import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
+import AppLayout from '@/layouts/AppLayout.vue'
 
 export default {
   components: {
     AuthenticationCard,
     AuthenticationCardLogo,
   },
+
+  layout: AppLayout,
 
   data () {
     return {

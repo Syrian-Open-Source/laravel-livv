@@ -10,6 +10,9 @@ export default {
     update: 'Update',
     close: 'Close',
     select: 'Select',
+    confirm: 'Confirm',
+    reset: 'Email Password Reset Link',
+    resend: 'Resend Verification Email',
   },
   titles: {
     new: 'New {0}',
@@ -25,6 +28,11 @@ export default {
     actions: 'Actions',
     type: 'Type',
     logo: 'Logo',
+    agree: 'I agree to the',
+    terms: 'Terms of service',
+    and: 'and',
+    policy: 'Privacy policy',
+
   },
   option: 'Option',
 }

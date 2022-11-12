@@ -4,12 +4,15 @@ export default {
   },
   buttons: {
     cancel: 'الغاء',
-    ok: 'تأكيد',
+    ok: 'موافق',
     save: 'حفظ',
     add: 'إضافة',
     update: 'تحديث',
     close: 'إغلاق',
     select: 'اختيار',
+    confirm: 'تأكيد',
+    reset: 'إعادة تعيين كلمة المرور',
+    resend: 'إعادة إرسال رابط التحقق',
   },
   titles: {
     new: 'جديد{0}',
@@ -25,6 +28,10 @@ export default {
     actions: 'خيارات',
     type: 'نوع',
     logo: 'لوغو',
+    agree: 'أوافق على',
+    terms: 'شروط الخدمة',
+    and: 'و',
+    policy: ' سياسة الخصوصية',
   },
   option: 'خيار',
 }

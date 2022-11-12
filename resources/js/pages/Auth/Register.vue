@@ -4,7 +4,7 @@
       <authentication-card-logo />
     </template>
     <template #title>
-      Register
+      {{ $t('auth.register') }}
     </template>
 
     <form @submit.prevent="submit">
@@ -13,7 +13,7 @@
           <v-text-field
             v-model="form.name"
             name="name"
-            label="Name"
+            :label="$t('forms.columns.name')"
             hide-details="auto"
             autocomplete="name"
             :error-messages="errors['name']"
@@ -26,7 +26,7 @@
           <v-text-field
             v-model="form.email"
             name="email"
-            label="Email"
+            :label="$t('auth.email')"
             type="email"
             hide-details="auto"
             autocomplete="email"
@@ -42,7 +42,7 @@
             :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
             :type="show1 ? 'text' : 'password'"
             name="password"
-            label="Password"
+            :label="$t('auth.password')"
             hide-details="auto"
             autocomplete="new-password"
             :error-messages="errors['password']"
@@ -58,7 +58,7 @@
             :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'"
             name="password"
             :type="show2 ? 'text' : 'password'"
-            label="Confirm Password"
+            :label="$t('auth.passwordconfirmation')"
             hide-details="auto"
             autocomplete="new-password"
             outlined
@@ -75,15 +75,15 @@
             v-model="form.terms"
             :error-messages="errors['terms']"
           >
-            I agree to the <a
+            {{ $t('forms.columns.agree') }}<a
               target="_blank"
               :href="route('terms.show')"
               class="v-btn v-btn--text v-size--small"
-            >Terms of Service</a> and <a
+            >  {{ $t('forms.columns.terms') }}</a>   {{ $t('forms.columns.and') }} <a
               target="_blank"
               :href="route('policy.show')"
               class="v-btn v-btn--text v-size--small"
-            >Privacy Policy</a>
+            >   {{ $t('forms.columns.policy') }}</a>
           </v-checkbox>
         </v-col> -->
         <v-col
@@ -96,13 +96,13 @@
             :loading="form.processing"
             @click="submit"
           >
-            Register
+            {{ $t('auth.register') }}
           </v-btn>
           <inertia-link
             :href="route('login')"
             class="v-btn v-btn--text v-size--small"
           >
-            Already registered?
+            {{ $t('auth.alreadyregistered') }}
           </inertia-link>
         </v-col>
       </v-row>

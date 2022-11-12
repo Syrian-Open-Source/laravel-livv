@@ -2,7 +2,7 @@
   <v-container>
     <v-card evaluation="4">
       <v-card-text>
-        Hello! , you can start your App from here now !
+        {{ $t('comps.msg1') }}
       </v-card-text>
     </v-card>
   </v-container>

@@ -46,7 +46,7 @@
         <v-col cols="12">
           <v-checkbox
             v-model="form.remeber"
-            label="Remember me"
+            :label="$t('auth.remember')"
             value="on"
           />
         </v-col>
