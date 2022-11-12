@@ -32,6 +32,6 @@
 
 <style>
 .login {
-  background: url('https://images.unsplash.com/photo-1515248101569-f6e91c070aa8?ixlib=rb-0.3.5&q=99&fm=jpg&crop=entropy&cs=tinysrgb&w=2048&fit=max&s=59dbea99695b93dce5eba690b7ea1c6e?momo_cache_bg_uuid=439716cf-8d54-49ba-bd9d-7ee72a57d837');
+  background: url('https://images.unsplash.com/photo-1483354483454-4cd359948304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
 }
 </style>
