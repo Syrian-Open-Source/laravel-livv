@@ -63,7 +63,7 @@
             autofocus
           />
         </v-col>
-        <v-col
+        <!-- <v-col
           v-if="$page.props.jetstream.hasTermsAndPrivacyPolicyFeature"
           cols="12"
         >
@@ -81,7 +81,7 @@
               class="v-btn v-btn--text v-size--small"
             >Privacy Policy</a>
           </v-checkbox>
-        </v-col>
+        </v-col> -->
         <v-col
           cols="12"
           class="d-flex align-center"
@@ -109,6 +109,7 @@
 <script>
 import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
 import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
+import AppLayout from '@/layouts/AppLayout.vue'
 
 export default {
   name: 'RegisterView',
@@ -117,6 +118,8 @@ export default {
     AuthenticationCard,
     AuthenticationCardLogo,
   },
+
+  layout: AppLayout,
 
   data () {
     return {
