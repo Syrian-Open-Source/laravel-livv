@@ -12,7 +12,7 @@ A package to help you get started with a new Laravel project using `Inertia`, `V
 You can install the package via composer:
 
 ```bash
-composer require syrian-open-source/laravel-livv
+composer require syrian-open-source/laravel-livv --dev
 ```
 
 ## Usage
@@ -21,6 +21,7 @@ Just run this command and you're good to go
 
 ```bash
 php artisan livv:install
+npm i && npm run dev
 ```
 
 ### Disclaimer
@@ -31,6 +32,11 @@ This package is designed to be used on a fresh Laravel project.
 - [ ] Use json files instead of split translations
 - [ ] Add an example CRUD
 - [ ] Add UserSeeder with a default admin account
+- [ ] Add option to enable/disable locales
+- [ ] Update web.php with groups
+- [ ] Include laravel ide helper support
+- [ ] Refactor/Simplify SideBar component 
+- [ ] Add Roles/Permissions support
 
 ## Changelog
 
