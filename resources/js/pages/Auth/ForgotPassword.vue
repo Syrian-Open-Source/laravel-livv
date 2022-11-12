@@ -28,7 +28,11 @@
       </div>
 
       <div class="flex items-center justify-end mt-4">
-        <v-btn :loading="form.processing">
+        <v-btn
+          :loading="form.processing"
+          dark
+          color="primary"
+        >
           Email Password Reset Link
         </v-btn>
       </div>
@@ -39,12 +43,15 @@
 <script>
 import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
 import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
+import AppLayout from '@/layouts/AppLayout.vue'
 
 export default {
   components: {
     AuthenticationCard,
     AuthenticationCardLogo,
   },
+
+  layout: AppLayout,
 
   props: {
     status: {
@@ -60,7 +67,15 @@ export default {
       }),
     }
   },
+  computed: {
+    errors () {
+      return this.$page.props.errors
+    },
 
+    hasErrors () {
+      return Object.keys(this.errors).length > 0
+    },
+  },
   methods: {
     submit () {
       this.form.post(this.route('password.email'))
