@@ -1,6 +1,10 @@
 <template>
   <v-container>
-    Hello world!
+    <v-card evaluation="4">
+      <v-card-text>
+        Hello! , you can start your App from here now !
+      </v-card-text>
+    </v-card>
   </v-container>
 </template>
 
