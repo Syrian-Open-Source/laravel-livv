@@ -1,8 +1,8 @@
 <template>
   <v-container>
-    <v-card evaluation="4">
+    <v-card elevation="5">
       <v-card-text>
-        {{ $t('comps.msg1') }}
+        {{ $t('msgs.msg1') }}
       </v-card-text>
     </v-card>
   </v-container>

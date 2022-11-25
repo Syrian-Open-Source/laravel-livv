@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-card evaluation="5">
-      <v-card-text> {{ $t('comps.msg2') }}</v-card-text>
+    <v-card elevation="5">
+      <v-card-text> {{ $t('msgs.msg2') }}</v-card-text>
     </v-card>
   </v-container>
 </template>

@@ -5,7 +5,7 @@
     </template>
 
     <div class="mb-4 text-subtitle-2">
-      {{ $t('comps.msg3') }}
+      {{ $t('msgs.msg3') }}
     </div>
 
     <form @submit.prevent="submit">

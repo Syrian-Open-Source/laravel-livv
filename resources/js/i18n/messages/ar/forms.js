@@ -15,7 +15,7 @@ export default {
     resend: 'إعادة إرسال رابط التحقق',
   },
   titles: {
-    new: 'جديد{0}',
+    new: 'جديد {0}',
     edit: 'تعديل {0}',
     options: 'خيارات {0}',
   },
@@ -28,10 +28,6 @@ export default {
     actions: 'خيارات',
     type: 'نوع',
     logo: 'لوغو',
-    agree: 'أوافق على',
-    terms: 'شروط الخدمة',
-    and: 'و',
-    policy: ' سياسة الخصوصية',
   },
   option: 'خيار',
 }

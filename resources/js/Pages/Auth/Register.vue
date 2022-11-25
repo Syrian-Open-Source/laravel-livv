@@ -58,7 +58,7 @@
             :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'"
             name="password"
             :type="show2 ? 'text' : 'password'"
-            :label="$t('auth.passwordconfirmation')"
+            :label="$t('auth.passwordConfirmation')"
             hide-details="auto"
             autocomplete="new-password"
             outlined
@@ -67,25 +67,6 @@
             @click:append="show2 = !show2"
           />
         </v-col>
-        <!-- <v-col
-          v-if="$page.props.jetstream.hasTermsAndPrivacyPolicyFeature"
-          cols="12"
-        >
-          <v-checkbox
-            v-model="form.terms"
-            :error-messages="errors['terms']"
-          >
-            {{ $t('forms.columns.agree') }}<a
-              target="_blank"
-              :href="route('terms.show')"
-              class="v-btn v-btn--text v-size--small"
-            >  {{ $t('forms.columns.terms') }}</a>   {{ $t('forms.columns.and') }} <a
-              target="_blank"
-              :href="route('policy.show')"
-              class="v-btn v-btn--text v-size--small"
-            >   {{ $t('forms.columns.policy') }}</a>
-          </v-checkbox>
-        </v-col> -->
         <v-col
           cols="12"
           class="d-flex align-center"
@@ -102,7 +83,7 @@
             :href="route('login')"
             class="v-btn v-btn--text v-size--small"
           >
-            {{ $t('auth.alreadyregistered') }}
+            {{ $t('auth.alreadyRegistered') }}
           </inertia-link>
         </v-col>
       </v-row>

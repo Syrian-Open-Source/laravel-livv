@@ -5,14 +5,14 @@
     </template>
 
     <div class="mb-4 text-sm text-gray-600">
-      {{ $t('comps.msg5') }}
+      {{ $t('msgs.msg5') }}
     </div>
 
     <div
       v-if="verificationLinkSent"
       class="mb-4 font-medium text-sm text-green-600"
     >
-      {{ $t('comps.msg6') }}
+      {{ $t('msgs.msg6') }}
     </div>
 
     <form @submit.prevent="submit">

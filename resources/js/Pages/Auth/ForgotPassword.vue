@@ -5,7 +5,7 @@
     </template>
 
     <div class="mb-4 text-sm text-gray-600">
-      {{ $t('comps.msg4') }}
+      {{ $t('msgs.msg4') }}
     </div>
 
     <div
@@ -30,7 +30,6 @@
       <div class="flex items-center justify-end mt-4">
         <v-btn
           :loading="form.processing"
-          dark
           color="primary"
         >
           {{ $t('forms.buttons.reset') }}
