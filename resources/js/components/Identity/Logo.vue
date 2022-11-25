@@ -11,7 +11,7 @@ export default {
   name: 'BrandLogo',
 
   props: {
-    background: {
+    background: { 
       type: String,
       default: 'white',
     },
