@@ -5,13 +5,10 @@
     </template>
 
     <div class="mb-4 text-sm text-gray-600">
-      {{ $t('msgs.msg4') }}
+      {{ $t("msgs.msg3") }}
     </div>
 
-    <div
-      v-if="status"
-      class="mb-4 font-medium text-sm text-green-600"
-    >
+    <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
       {{ status }}
     </div>
 
@@ -28,11 +25,8 @@
       </div>
 
       <div class="flex items-center justify-end mt-4">
-        <v-btn
-          :loading="form.processing"
-          color="primary"
-        >
-          {{ $t('forms.buttons.reset') }}
+        <v-btn :loading="form.processing" color="primary">
+          {{ $t("forms.buttons.reset") }}
         </v-btn>
       </div>
     </form>
@@ -40,9 +34,9 @@
 </template>
 
 <script>
-import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
-import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
-import AppLayout from '@/layouts/AppLayout.vue'
+import AuthenticationCard from "@/components/Auth/AuthenticationCard.vue";
+import AuthenticationCardLogo from "@/components/Auth/AuthenticationCardLogo.vue";
+import AppLayout from "@/layouts/AppLayout.vue";
 
 export default {
   components: {
@@ -55,30 +49,30 @@ export default {
   props: {
     status: {
       type: String,
-      default: '',
+      default: "",
     },
   },
 
-  data () {
+  data() {
     return {
       form: this.$inertia.form({
-        email: '',
+        email: "",
       }),
-    }
+    };
   },
   computed: {
-    errors () {
-      return this.$page.props.errors
+    errors() {
+      return this.$page.props.errors;
     },
 
-    hasErrors () {
-      return Object.keys(this.errors).length > 0
+    hasErrors() {
+      return Object.keys(this.errors).length > 0;
     },
   },
   methods: {
-    submit () {
-      this.form.post(this.route('password.email'))
+    submit() {
+      this.form.post(this.route("password.email"));
     },
   },
-}
+};
 </script>

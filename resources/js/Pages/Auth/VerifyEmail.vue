@@ -5,20 +5,20 @@
     </template>
 
     <div class="mb-4 text-sm text-gray-600">
-      {{ $t('msgs.msg5') }}
+      {{ $t("msgs.msg4") }}
     </div>
 
     <div
       v-if="verificationLinkSent"
       class="mb-4 font-medium text-sm text-green-600"
     >
-      {{ $t('msgs.msg6') }}
+      {{ $t("msgs.msg5") }}
     </div>
 
     <form @submit.prevent="submit">
       <div class="mt-4 flex items-center justify-between">
         <v-btn :loading="form.processing">
-          {{ $t('forms.buttons.resend') }}
+          {{ $t("forms.buttons.resend") }}
         </v-btn>
 
         <inertia-link
@@ -27,7 +27,7 @@
           as="button"
           class="underline text-sm text-gray-600 hover:text-gray-900"
         >
-          {{ $t('auth.logout') }}
+          {{ $t("auth.logout") }}
         </inertia-link>
       </div>
     </form>
@@ -35,9 +35,9 @@
 </template>
 
 <script>
-import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
-import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
-import AppLayout from '@/layouts/AppLayout.vue'
+import AuthenticationCard from "@/components/Auth/AuthenticationCard.vue";
+import AuthenticationCardLogo from "@/components/Auth/AuthenticationCardLogo.vue";
+import AppLayout from "@/layouts/AppLayout.vue";
 
 export default {
   components: {
@@ -50,26 +50,26 @@ export default {
   props: {
     status: {
       type: String,
-      default: '',
+      default: "",
     },
   },
 
-  data () {
+  data() {
     return {
       form: this.$inertia.form(),
-    }
+    };
   },
 
   computed: {
-    verificationLinkSent () {
-      return this.status === 'verification-link-sent'
+    verificationLinkSent() {
+      return this.status === "verification-link-sent";
     },
   },
 
   methods: {
-    submit () {
-      this.form.post(this.route('verification.send'))
+    submit() {
+      this.form.post(this.route("verification.send"));
     },
   },
-}
+};
 </script>
