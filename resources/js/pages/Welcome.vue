@@ -1,18 +1,31 @@
 <template>
-  <v-container>
-    <v-card elevation="5">
-      <v-card-text>
-        {{ $t('msgs.msg1') }}
-      </v-card-text>
-    </v-card>
-  </v-container>
+  <div>
+    <hero-sec />
+    <livv-stack />
+    <livv-features />
+    <syrian-open-source />
+    <v-divider />
+    <authors-sec />
+  </div>
 </template>
 
 <script>
-import AppLayout from '../layouts/AppLayout.vue'
+import HeroSec from "@/components/Layout/HeroSec.vue";
+import LivvStack from "@/components/Layout/LivvStack.vue";
+import LivvFeatures from "@/components/Layout/LivvFeatures.vue";
+import SyrianOpenSource from "@/components/Layout/SyrianOpenSource.vue";
+import AuthorsSec from "@/components/Layout/AuthorsSec.vue";
+import AppLayout from "../layouts/AppLayout.vue";
 
 export default {
-  name: 'WelcomeView',
+  name: "WelcomeView",
+  components: {
+    HeroSec,
+    LivvStack,
+    LivvFeatures,
+    SyrianOpenSource,
+    AuthorsSec,
+  },
   layout: AppLayout,
-}
+};
 </script>

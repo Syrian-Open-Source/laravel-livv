@@ -36,7 +36,7 @@
     <side-bar :key="route().current()" />
 
     <!-- Sizes your content based upon application components -->
-    <v-main style="background-color: #ECECEC;">
+    <v-main>
       <!-- Provides the application the proper gutter -->
       <flash-messages />
       <transition>

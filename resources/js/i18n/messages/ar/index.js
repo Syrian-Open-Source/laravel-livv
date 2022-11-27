@@ -3,6 +3,7 @@ import nav from './nav'
 import comps from './comps'
 import forms from './forms'
 import msgs from './msgs'
+import home from './home'
 
 export default {
   auth,
@@ -10,4 +11,5 @@ export default {
   comps,
   forms,
   msgs,
+  home,
 }
