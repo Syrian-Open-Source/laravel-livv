@@ -17,7 +17,7 @@ composer require syrian-open-source/laravel-livv --dev
 
 ## Usage
 
-Just run this command and you're good to go
+Just run these two commands and you're good to go
 
 ```bash
 php artisan livv:install
