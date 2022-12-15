@@ -3,7 +3,7 @@ export default {
     question: 'هل أنت متأكد من رغبتك في حذف هذا العنصر',
   },
   buttons: {
-    cancel: 'الغاء',
+    cancel: 'إلغاء',
     ok: 'موافق',
     save: 'حفظ',
     add: 'إضافة',

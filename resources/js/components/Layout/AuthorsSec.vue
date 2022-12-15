@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="3">
         <h2 class="mt-3 text-decoration-underline">
-          {{ $t("home.sos.authors") }}
+          {{ $t('home.sos.authors') }}
         </h2>
       </v-col>
       <v-col
@@ -33,7 +33,7 @@ export default {
   data: () => ({
     authors: [
       {
-        avatar: 'Rk',
+        avatar: 'RK',
         name: 'Roduan Kareem Aldeen',
         account: 'https://github.com/RoduanKD',
       },

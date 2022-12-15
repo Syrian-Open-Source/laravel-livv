@@ -7,17 +7,17 @@
       <v-row align="center" class="fill-height" align-content="center">
         <v-col cols="12" sm="6">
           <p class="text-h4 white--text font-weight-medium mr-10">
-            {{ $t("home.title.title2") }}
+            {{ $t('home.title.title2') }}
           </p>
         </v-col>
         <v-col cols="12" sm="6">
           <v-container class="ml-12">
             <ul class="text-h6">
-              <li>{{ $t("home.features.f1") }}</li>
-              <li>{{ $t("home.features.f2") }}</li>
-              <li>{{ $t("home.features.f3") }}</li>
-              <li>{{ $t("home.features.f4") }}</li>
-              <li>{{ $t("home.features.f5") }}</li>
+              <li>{{ $t('home.features.f1') }}</li>
+              <li>{{ $t('home.features.f2') }}</li>
+              <li>{{ $t('home.features.f3') }}</li>
+              <li>{{ $t('home.features.f4') }}</li>
+              <li>{{ $t('home.features.f5') }}</li>
             </ul>
           </v-container>
         </v-col>
@@ -25,10 +25,3 @@
     </v-overlay>
   </v-img>
 </template>
-
-<script>
-export default {};
-</script>
-
-<style>
-</style>

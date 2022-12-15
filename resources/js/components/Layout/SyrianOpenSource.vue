@@ -4,11 +4,11 @@
     <v-col cols="12" md="6">
       <v-container>
         <h3 class="text-h3 font-weight-medium">
-          <span class="primary--text"> {{ $t("home.sos.syrian") }} </span>
-          {{ $t("home.sos.title") }}
+          <span class="primary--text"> {{ $t('home.sos.syrian') }} </span>
+          {{ $t('home.sos.title') }}
         </h3>
         <p class="text-h6 font-weight-regular mt-5">
-          {{ $t("home.sos.content") }}
+          {{ $t('home.sos.content') }}
         </p>
       </v-container>
     </v-col>
@@ -22,10 +22,10 @@
                 height="150px"
               />
               <h2 class="font-weight-regular primary--text ml-2 mt-5">
-                {{ $t("home.sos.follow") }}
+                {{ $t('home.sos.follow') }}
               </h2>
               <p class="mx-3">
-                {{ $t("home.sos.subtitle") }}
+                {{ $t('home.sos.subtitle') }}
               </p>
               <v-divider />
               <v-list-item v-for="(item, i) in items" :key="i">
@@ -48,9 +48,9 @@
 export default {
   data: () => ({
     items: [
-      { text: "http://syrianopensource.com", icon: "mdi-web" },
-      { text: "Syrian Open Source", icon: "mdi-facebook" },
-      { text: "Syrian Open Source", icon: "mdi-github" },
+      { text: 'http://syrianopensource.com', icon: 'mdi-web' },
+      { text: 'Syrian Open Source', icon: 'mdi-facebook' },
+      { text: 'Syrian Open Source', icon: 'mdi-github' },
     ],
   }),
 };
