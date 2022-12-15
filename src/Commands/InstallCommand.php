@@ -73,6 +73,7 @@ class InstallCommand extends Command
         copy(__DIR__ . '/../../resources/.editorconfig', base_path('/.editorconfig'));
         copy(__DIR__ . '/../../resources/middleware/HandleInertiaRequests.php', base_path('app/Http/Middleware/HandleInertiaRequests.php'));
         copy(__DIR__ . '/../../routes/web.php', base_path('routes/web.php'));
+
         return self::SUCCESS;
     }
 }
