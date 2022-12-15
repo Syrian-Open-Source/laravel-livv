@@ -1,31 +1,33 @@
 <template>
   <div>
-    <hero-sec />
+    <hero-section />
     <livv-stack />
     <livv-features />
     <syrian-open-source />
     <v-divider />
-    <authors-sec />
+    <authors-section />
   </div>
 </template>
 
 <script>
-import HeroSec from "@/components/Layout/HeroSec.vue";
-import LivvStack from "@/components/Layout/LivvStack.vue";
-import LivvFeatures from "@/components/Layout/LivvFeatures.vue";
-import SyrianOpenSource from "@/components/Layout/SyrianOpenSource.vue";
-import AuthorsSec from "@/components/Layout/AuthorsSec.vue";
-import AppLayout from "../layouts/AppLayout.vue";
+import HeroSection from '@/components/Layout/HeroSection.vue'
+import LivvStack from '@/components/Layout/LivvStack.vue'
+import LivvFeatures from '@/components/Layout/LivvFeatures.vue'
+import SyrianOpenSource from '@/components/Layout/SyrianOpenSource.vue'
+import AuthorsSection from '@/components/Layout/AuthorsSection.vue'
+import AppLayout from '@/layouts/AppLayout.vue'
 
 export default {
-  name: "WelcomeView",
+  name: 'WelcomeView',
+
   components: {
-    HeroSec,
+    HeroSection,
     LivvStack,
     LivvFeatures,
     SyrianOpenSource,
-    AuthorsSec,
+    AuthorsSection,
   },
+
   layout: AppLayout,
 };
 </script>

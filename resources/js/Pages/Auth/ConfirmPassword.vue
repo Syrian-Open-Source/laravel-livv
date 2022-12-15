@@ -5,7 +5,7 @@
     </template>
 
     <div class="mb-4 text-subtitle-2">
-      {{ $t("msgs.msg2") }}
+      {{ $t('msgs.msg2') }}
     </div>
 
     <form @submit.prevent="submit">
@@ -32,7 +32,7 @@
           :loading="form.processing"
           @click="submit"
         >
-          {{ $t("forms.buttoms.confirm") }}
+          {{ $t('forms.buttons.confirm') }}
         </v-btn>
       </v-col>
     </form>
@@ -40,9 +40,9 @@
 </template>
 
 <script>
-import AuthenticationCard from "@/components/Auth/AuthenticationCard.vue";
-import AuthenticationCardLogo from "@/components/Auth/AuthenticationCardLogo.vue";
-import AppLayout from "@/layouts/AppLayout.vue";
+import AuthenticationCard from '@/components/Auth/AuthenticationCard.vue'
+import AuthenticationCardLogo from '@/components/Auth/AuthenticationCardLogo.vue'
+import AppLayout from '@/layouts/AppLayout.vue'
 
 export default {
   components: {
@@ -55,27 +55,27 @@ export default {
   data() {
     return {
       form: this.$inertia.form({
-        password: "",
+        password: '',
       }),
-    };
+    }
   },
 
   computed: {
     errors() {
-      return this.$page.props.errors;
+      return this.$page.props.errors
     },
 
     hasErrors() {
-      return Object.keys(this.errors).length > 0;
+      return Object.keys(this.errors).length > 0
     },
   },
 
   methods: {
     submit() {
-      this.form.post(this.route("password.confirm"), {
+      this.form.post(this.route('password.confirm'), {
         onFinish: () => this.form.reset(),
-      });
+      })
     },
   },
-};
+}
 </script>
