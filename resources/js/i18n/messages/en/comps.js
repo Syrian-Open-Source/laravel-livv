@@ -1,6 +1,7 @@
 export default {
-  // example: {
-  //   p: 'Examples',
-  //   s: 'Example'
+  // example
+  // post: {
+  //   p: 'Posts',
+  //   s: 'post',
   // }
 }

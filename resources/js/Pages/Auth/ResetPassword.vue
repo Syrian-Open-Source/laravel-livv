@@ -54,7 +54,7 @@
 
       <div class="flex items-center justify-end mt-4">
         <v-btn :loading="form.processing">
-          Reset Password
+          {{ $t('forms.buttons.reset') }}
         </v-btn>
       </div>
     </form>

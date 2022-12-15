@@ -30,14 +30,14 @@ export default {
   }),
   computed: {
     text () {
-      return this.$page.props.flash.success || this.$page.props.flash.error
+      return this.$page.props.success || this.$page.props.flash.success || this.$page.props.flash.error
     },
   },
   watch: {
     '$page.props.flash': {
       deep: true,
       handler () {
-        if (this.$page.props.flash.success || this.$page.props.flash.error) {
+        if (this.$page.props.success || this.$page.props.flash.success || this.$page.props.flash.error) {
           this.snackbar = true
         }
       },

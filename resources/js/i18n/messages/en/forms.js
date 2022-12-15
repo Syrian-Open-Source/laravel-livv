@@ -10,6 +10,9 @@ export default {
     update: 'Update',
     close: 'Close',
     select: 'Select',
+    confirm: 'Confirm',
+    reset: 'Email Password Reset Link',
+    resend: 'Resend Verification Email',
   },
   titles: {
     new: 'New {0}',
