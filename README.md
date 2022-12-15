@@ -37,7 +37,7 @@ This package is designed to be used on a fresh Laravel project.
 - [ ] Include laravel ide helper support
 - [ ] Refactor/Simplify SideBar component 
 - [ ] Add Roles/Permissions support
-- [ ] Update Welcome page content
+- [x] Update Welcome page content
 
 ## Changelog
 
@@ -54,6 +54,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Credits
 
 - [Roduan Kareem Aldeen](https://github.com/RoduanKD)
+- [Farah Samaha](https://github.com/FarahSamaha)
 - [All Contributors](../../contributors)
 
 About Syrian Open Source
