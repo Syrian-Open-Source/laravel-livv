@@ -79,6 +79,7 @@ class InstallCommand extends Command
         copy(__DIR__ . '/../../database/seeders/DatabaseSeeder.php', base_path('database/seeders/DatabaseSeeder.php'));
 
         $this->installMiddlewareAfter('SubstituteBindings::class', '\App\Http\Middleware\SetLocale::class');
+        $this->replaceInFile('/dashboard', '/admin/dashboard', app_path('Providers/RouteServiceProvider.php'));
         $this->info('Your application is ready!');
         $this->info('Please run the following command');
         $this->info('npm i && npm run dev');
@@ -114,5 +115,18 @@ class InstallCommand extends Command
                 $httpKernel
             ), LOCK_EX);
         }
+    }
+
+    /**
+     * Replace a given string within a given file.
+     *
+     * @param  string  $search
+     * @param  string  $replace
+     * @param  string  $path
+     * @return void
+     */
+    protected function replaceInFile($search, $replace, $path)
+    {
+        file_put_contents($path, str_replace($search, $replace, file_get_contents($path)));
     }
 }
