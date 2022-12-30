@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-livv` will be documented in this file.
 
+## 1.0.1 - 2022-12-30
+
+### Changelog
+
+- Enable Localization
+- Add default seeder
+- Update web.php with groups
+
 ## 1.0.0 - 2022-12-15
 
 ### Features
