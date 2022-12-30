@@ -9,7 +9,7 @@
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" />
       <v-app-bar-title>
-        <v-img width="75">
+        <v-img width="50">
           <brand-logo background="primary" />
         </v-img>
       </v-app-bar-title>
@@ -33,7 +33,7 @@
       </v-btn>
     </v-app-bar>
 
-    <side-bar :key="route().current()" />
+    <side-bar :key="route().current() + $i18n.locale" />
 
     <!-- Sizes your content based upon application components -->
     <v-main>
