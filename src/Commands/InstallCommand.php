@@ -4,6 +4,7 @@ namespace SOS\LaravelLivv\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Str;
 use SOS\LaravelLivv\Traits\InteractsWithComposerPackages;
 use SOS\LaravelLivv\Traits\InteractsWithNodePackages;
 
