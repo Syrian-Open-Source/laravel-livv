@@ -23,7 +23,10 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
-Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
+
+Route::prefix('admin')->name('admin.')->middleware('auth', 'verified')->group(function () {
+    Route::inertia('dashboard', 'Admin/Dashboard')->name('dashboard');
+});
 
 Route::get('language/{lang}', function ($lang) {
     session(['locale' => $lang]);

@@ -31,7 +31,7 @@ This package is designed to be used on a fresh Laravel project.
 - [ ] Add an example CRUD
 - [x] Add UserSeeder with a default admin account
 - [ ] Add option to enable/disable locales
-- [ ] Update web.php with groups
+- [x] Update web.php with groups
 - [ ] Include laravel ide helper support
 - [ ] Refactor/Simplify SideBar component 
 - [ ] Add Roles/Permissions support
