@@ -27,13 +27,15 @@ class InstallCommand extends Command
         shell_exec('php artisan breeze:install vue');
 
         $this->updateNodePackages(function ($packages) {
-            unset($packages['@inertiajs/inertia-vue3']);
-            unset($packages['@vitejs/plugin-vue']);
-            unset($packages['@tailwindcss/forms']);
-            unset($packages['@vue/compiler-sfc']);
-            unset($packages['tailwindcss']);
-            unset($packages['vue']);
-            unset($packages['vue-loader']);
+            unset(
+                $packages['@inertiajs/inertia-vue3'],
+                $packages['@vitejs/plugin-vue'],
+                $packages['@tailwindcss/forms'],
+                $packages['@vue/compiler-sfc'],
+                $packages['tailwindcss'],
+                $packages['vue'],
+                $packages['vue-loader']
+            );
 
             return [
                 '@inertiajs/inertia-vue' => '^0.8.0',
@@ -73,11 +75,43 @@ class InstallCommand extends Command
         copy(__DIR__ . '/../../resources/.editorconfig', base_path('/.editorconfig'));
         copy(__DIR__ . '/../../resources/middleware/HandleInertiaRequests.php', base_path('app/Http/Middleware/HandleInertiaRequests.php'));
         copy(__DIR__ . '/../../routes/web.php', base_path('routes/web.php'));
+        copy(__DIR__ . '/../../app/Http/Middleware/SetLocale.php', app_path('Http/Middleware/SetLocale.php'));
 
+        $this->installMiddlewareAfter('SubstituteBindings::class', '\App\Http\Middleware\SetLocale::class');
         $this->info('Your application is ready!');
         $this->info('Please run the following command');
         $this->info('npm i && npm run dev');
 
         return self::SUCCESS;
+    }
+
+    /**
+     * Install the middleware to a group in the application Http Kernel.
+     *
+     * @param  string  $after
+     * @param  string  $name
+     * @param  string  $group
+     * @return void
+     */
+    protected function installMiddlewareAfter($after, $name, $group = 'web')
+    {
+        $httpKernel = file_get_contents(app_path('Http/Kernel.php'));
+
+        $middlewareGroups = Str::before(Str::after($httpKernel, '$middlewareGroups = ['), '];');
+        $middlewareGroup = Str::before(Str::after($middlewareGroups, "'$group' => ["), '],');
+
+        if (! Str::contains($middlewareGroup, $name)) {
+            $modifiedMiddlewareGroup = str_replace(
+                $after.',',
+                $after.','.PHP_EOL.'            '.$name.',',
+                $middlewareGroup,
+            );
+
+            file_put_contents(app_path('Http/Kernel.php'), str_replace(
+                $middlewareGroups,
+                str_replace($middlewareGroup, $modifiedMiddlewareGroup, $middlewareGroups),
+                $httpKernel
+            ), LOCK_EX);
+        }
     }
 }

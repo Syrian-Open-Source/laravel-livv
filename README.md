@@ -1,8 +1,6 @@
 # Laravel-livv
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/syrian-open-source/laravel-livv.svg?style=flat-square)](https://packagist.org/packages/syrian-open-source/laravel-livv)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/syrian-open-source/laravel-livv/run-tests?label=tests)](https://github.com/syrian-open-source/laravel-livv/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/syrian-open-source/laravel-livv/Check%20&%20fix%20styling?label=code%20style)](https://github.com/syrian-open-source/laravel-livv/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/syrian-open-source/laravel-livv.svg?style=flat-square)](https://packagist.org/packages/syrian-open-source/laravel-livv)
 
 A package to help you get started with a new Laravel project using `Inertia`, `Vue`, `Vuetify` & `Vite`.
@@ -17,7 +15,7 @@ composer require syrian-open-source/laravel-livv --dev
 
 ## Usage
 
-Just run these two commands and you're good to go
+Just run these two commands, and you're good to go
 
 ```bash
 php artisan livv:install
@@ -28,7 +26,7 @@ npm i && npm run dev
 This package is designed to be used on a fresh Laravel project.
 
 ## Todo
-- [ ] Localize all files
+- [x] Localize all files
 - [ ] Use json files instead of split translations
 - [ ] Add an example CRUD
 - [ ] Add UserSeeder with a default admin account

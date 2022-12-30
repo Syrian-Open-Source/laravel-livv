@@ -20,7 +20,7 @@
       >
         <v-icon>{{ selectableLocale }}</v-icon>
       </v-btn>
-         <v-btn
+      <v-btn
         icon
         @click="$vuetify.theme.dark = !$vuetify.theme.dark"
       >

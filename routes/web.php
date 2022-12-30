@@ -25,8 +25,10 @@ Route::get('/', function () {
 });
 Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
-Route::get('/dashboard', function () {
-    return inertia('Admin/Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('language/{lang}', function ($lang) {
+    session(['locale' => $lang]);
+
+    return redirect()->back();
+})->name('lang.switch')->where('lang', 'ar|en');
 
 require __DIR__.'/auth.php';
