@@ -76,6 +76,7 @@ class InstallCommand extends Command
         copy(__DIR__ . '/../../resources/middleware/HandleInertiaRequests.php', base_path('app/Http/Middleware/HandleInertiaRequests.php'));
         copy(__DIR__ . '/../../routes/web.php', base_path('routes/web.php'));
         copy(__DIR__ . '/../../app/Http/Middleware/SetLocale.php', app_path('Http/Middleware/SetLocale.php'));
+        copy(__DIR__ . '/../../database/seeders/DatabaseSeeder.php', base_path('database/seeders/DatabaseSeeder.php'));
 
         $this->installMiddlewareAfter('SubstituteBindings::class', '\App\Http\Middleware\SetLocale::class');
         $this->info('Your application is ready!');

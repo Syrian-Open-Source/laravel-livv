@@ -29,7 +29,7 @@ This package is designed to be used on a fresh Laravel project.
 - [x] Localize all files
 - [ ] Use json files instead of split translations
 - [ ] Add an example CRUD
-- [ ] Add UserSeeder with a default admin account
+- [x] Add UserSeeder with a default admin account
 - [ ] Add option to enable/disable locales
 - [ ] Update web.php with groups
 - [ ] Include laravel ide helper support
