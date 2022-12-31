@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-livv` will be documented in this file.
 
+## 1.0.2 - 2022-12-30
+
+### Changelog
+
+- update redirect to to /admin/dashboard
+
 ## 1.0.1 - 2022-12-30
 
 ### Changelog
