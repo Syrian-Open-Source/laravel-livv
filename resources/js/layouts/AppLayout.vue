@@ -9,25 +9,33 @@
         <v-toolbar-title>{{ $page.props.app.name }}</v-toolbar-title>
         <v-spacer />
       </v-container>
+      <template v-if="!$page.props.auth.user">
+        <v-btn
+          large
+          text
+          :href="route('login')"
+          @click.prevent="$inertia.visit(route('login'))"
+        >
+          {{ $t('auth.login') }}
+        </v-btn>
+        <v-btn
+          large
+          text
+          :href="route('register')"
+          @click.prevent="$inertia.visit(route('register'))"
+        >
+          {{ $t('auth.register') }}
+        </v-btn>
+      </template>
       <v-btn
-        class="d-flex justify-center justify-space-around mr-3 "
+        v-else
         large
         text
-        height="35"
-        :href="route('login')"
+        :href="route('admin.dashboard')"
+        @click.prevent="$inertia.visit(route('admin.dashboard'))"
       >
-        {{ $t('auth.login') }}
-      </v-btn>
-      <v-btn
-        class="d-flex justify-center justify-space-around mr-3 "
-        large
-        text
-        height="35"
-        :href="route('register')"
-      >
-        {{ $t('auth.register') }}
-      </v-btn>
-      <v-btn
+        {{ $t('nav.general.dashboard') }}
+      </v-btn>      <v-btn
         icon
         @click="$vuetify.theme.dark = !$vuetify.theme.dark"
       >
