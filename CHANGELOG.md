@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-livv` will be documented in this file.
 
+## 1.1.0 - 2022-12-31
+
+### Changelog
+
+- Add dashboard button when user is logged in
+
 ## 1.0.3 - 2022-12-31
 
 ### Changelog
