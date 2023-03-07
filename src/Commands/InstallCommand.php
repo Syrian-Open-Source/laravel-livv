@@ -29,7 +29,7 @@ class InstallCommand extends Command
 
         $this->updateNodePackages(function ($packages) {
             unset(
-                $packages['@inertiajs/inertia-vue3'],
+                $packages['@inertiajs/vue3'],
                 $packages['@vitejs/plugin-vue'],
                 $packages['@tailwindcss/forms'],
                 $packages['@vue/compiler-sfc'],
@@ -39,6 +39,8 @@ class InstallCommand extends Command
             );
 
             return [
+                '@inertiajs/inertia' => '^0.11.1',
+                '@inertiajs/progress' => '^0.2.7',
                 '@inertiajs/inertia-vue' => '^0.8.0',
                 '@vitejs/plugin-vue2' => '^2.0.0',
                 '@vue/eslint-config-standard' => '^6.1.0',
