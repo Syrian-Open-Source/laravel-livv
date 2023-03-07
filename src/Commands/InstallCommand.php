@@ -27,7 +27,7 @@ class InstallCommand extends Command
         $this->requireComposerPackages('laravel/breeze:^1.9');
         shell_exec('php artisan breeze:install vue');
 
-        $this->updateNodePackages(function ($packages) {
+        self::updateNodePackages(static function ($packages) {
             unset(
                 $packages['@inertiajs/vue3'],
                 $packages['@vitejs/plugin-vue'],
